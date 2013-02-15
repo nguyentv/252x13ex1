@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Exam 1 "Form Field Validation"</title>
+		<!-- Calls the javascript files -->
+		<script type="text/javascript" src="js/formValidation.js"> </script>
+		<script type="text/javascript" src="js/statesDropdown.js"> </script>
+	</head>
+
+	<body>
+		<!-- Creates form for user input -->
+		<form name="testForm" action="" method="post" onsubmit="return validateForm();">
+			<!-- Lets user input the different fields through keyboard -->
+			Street Address 1: <input type="text" name="address1" /> <br>
+			Street Address 2: <input type="text" name ="address2"/> <br>
+			City: <input type="text" name="city"/> <br>
+			
+			<!-- calls for different user interaction, select from a dropdown menu -->
+			State: 
+			<select id="state"> 
+				<option value="blank">Choose One</option>
+				<option></option>
+			</select> <br>
+			
+			Zip: <input type="text" id="zip" /> <br>
+			Phone Number: <input class="req" type="text" id="phone" /> <br>
+			Email <input type="text" id="email" /> <br>
+			
+			<!-- Submit button -->
+			<input type="submit" id="submit" value="Submit" />
+		</form>
+	</body>
+</html>
