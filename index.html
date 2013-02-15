@@ -7,26 +7,32 @@
 	</head>
 
 	<body>
-		<!-- Creates form for user input -->
-		<form name="testForm" action="" method="post" onsubmit="return validateForm();">
-			<!-- Lets user input the different fields through keyboard -->
-			Street Address 1: <input type="text" name="address1" /> <br>
-			Street Address 2: <input type="text" name ="address2"/> <br>
-			City: <input type="text" name="city"/> <br>
+		<!-- id for CSS to style -->
+		<div id="form">
+			<table>
+				<!-- Creates form for user input -->
+				<form name="testForm" action="" method="post" onsubmit="return validateForm();">
 			
-			<!-- calls for different user interaction, select from a dropdown menu -->
-			State: 
-			<select id="state"> 
-				<option value="blank">Choose One</option>
-				<option></option>
-			</select> <br>
+				<!-- Lets user input the different fields through keyboard -->
+				Street Address 1: <input type="text" name="address1" /> <p>
+				Street Address 2: <input type="text" name ="address2"/> <p>
+				City: <input type="text" name="city"/> <p>
 			
-			Zip: <input type="text" id="zip" /> <br>
-			Phone Number: <input class="req" type="text" id="phone" /> <br>
-			Email <input type="text" id="email" /> <br>
+				<!-- calls for different user interaction, select from a dropdown menu -->
+				State: 
+				<select id="state"> 
+					<option value="blank">Choose One</option>
+					<option></option>
+				</select> <p>
 			
-			<!-- Submit button -->
-			<input type="submit" id="submit" value="Submit" />
-		</form>
+				Zip: <input type="text" id="zip" /> <p>
+				Phone Number: <input class="req" type="text" id="phone" /> <p>
+				Email <input type="text" id="email" /> <br>
+			
+				<!-- Submit button -->
+				<input type="submit" id="submit" value="Submit" />
+				</form>
+			</table>
+		</div>
 	</body>
 </html>
